@@ -8,9 +8,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+    return a*b
   }
+  result = multiply (6,2);
+  console.log (result);
 
 
 /*
@@ -23,12 +25,16 @@ Do the following:
    1. Invoke the catYears function below and pass an age value to it
    2. Use the received value to calculate the age in cat years (1 human year is equal to 7 cat years)
    3. Return the newly calculated age
+   assuming number of cat years=5
+
+   
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+function catYears(age){
+    return age *7
 }
-
+numberOfYears = catYears(5);
+console.log (numberOfYears);
 
 
 
@@ -40,9 +46,10 @@ function catYears(/*add your code here*/){
 /*
 
 ------------
-function myFunction() {
+ myFunction = () =>  {
 console.log("Function was invoked!");
 };
+
 
 myFunction();
 ----------------
@@ -50,7 +57,7 @@ myFunction();
 let anotherFunction = function (param) {
   return param;
 };
-
+console.log ()
 anotherFunction("Example");
 
 ---------------
