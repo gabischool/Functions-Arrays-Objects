@@ -8,12 +8,15 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+   console.log(a * b)
   }
 
 
-/*
+ multiply(2,6)
+
+
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: Age in Cat years 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -25,10 +28,12 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+function catYears(age){
+var cat = age*7
+    console.log("Cat is " +cat+ " in human years!")
 }
 
+catYears(3)
 
 
 
@@ -83,10 +88,46 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+// Rock is 1, paper = 2, scissors = 0 //
+
+let computer = Math.floor(Math.random() * 3); 
+
+console.log(computer)
+
 function game(user, computer){
     /*add your code here*/
+    if ( (user == 2) && (computer == 2) )   {
+      console.log( "it's a tie!")
+    }  
+
+   else if ( (user == 2) && (computer == 1) )   {
+      console.log( "Computer Winds")
+    } 
+    
+   else if ( (user == 0) && (computer == 2) )   {
+      console.log( "User Wins!")
+    }  
+    else if( (user == 1) && (computer == 2) ) {
+
+    console.log( "Computer Wins!") 
+    }
+
+else if 
+( (user == 1) && (computer == 1) )   {
+  console.log( "it's a tie!")
+   
 }
 
+else if ( (user == 1) && (computer == 0) )   {
+  console.log( "User Wins!")}
+
+  else if 
+( (user == 0) && (computer == 0) )   {
+  console.log( "it's a tie!")
+
+    
+}
+ game(0, computer)
 
 
 
@@ -100,6 +141,3 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
