@@ -8,12 +8,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b) {
+    return a * b;
   }
 
-
-/*
+ console.log(multiply(5,5));
+ /* console log on the developer showed 25 and
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: Age in Cat years 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -25,9 +25,13 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
-}
+
+   let catYears = function(num1 , num2) {
+   return num1 + num2;
+
+  } 
+  console.log(add(1, 7))
+
 
 
 
@@ -64,6 +68,30 @@ add(1,2);
 */
 
 
+ const myFunction = () => {
+ console.log("myFunction");
+ }
+ myFunction();
+
+ let anotherFunction =  (param) => {
+   return param;
+ }
+
+console.log(anotherFunction);
+
+
+let add = (param1, param2) => {
+return param1 + param2;
+
+}
+
+console.log((1,2));
+
+
+
+
+
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -84,8 +112,17 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
-}
+    let user = 7; 
+    let computer = 3;
+    if (user === 7 ) {
+      console.log('you win'),
+     } if (copmputer === 3 )  {
+    console.log('you win'),
+
+
+    
+     }
+    
 
 
 
