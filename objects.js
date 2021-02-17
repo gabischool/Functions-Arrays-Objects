@@ -18,27 +18,77 @@ const example = {
   }
   
   // Write your intern objects here:
+
+  let interns = {
+
+
+                intern1:{ firstName: "Mitzi",
+                gender: "f",
+                email:"mmelloy0@psu.edu,",
+                id: 5},
+
+                intern2:{
+                firstName: "Antonietta",
+                gender: "f",
+                email:"adaine5@samsung.com",
+                id: 1
+                },
+
+                intern3:{
+                  firstName: "Gannie",
+                gender: "m",
+                email:"gmartinson3@illinois.edu,",
+                id: 4
+                },
+
+             intern4:{firstName: "Keven",
+                gender: "m",
+                email:"kmummery2@wikimedia.org",
+                id: 3},
+
+                intern5:{firstName: "Kennan",
+                gender: "m",
+                email:"kdiben1@tinypic.com",
+                id: 2}
+
+  };
+  // console.log(interns);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   // ==== Challenge 2: Reading Object Data ==== 
   // Once your objects are created, log out the following requests from HR into the console:
   
   // Mitzi's name
+  console.log(interns.intern1.firstName);
   
   // Kennan's ID
-  
+ console.log(interns.intern5.id);
   // Keven's email
-  
+  console.log(interns.intern4.email);
   // Gannie's name
-  
+  console.log(interns.intern3.firstName);
   // Antonietta's Gender
-  
+  console.log(interns.intern2.gender);
   // ==== Challenge 3: Object Methods ==== 
   // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-  // console.log(kennan.speak());
+   console.log("hello, my name is" + " " + interns.intern4.firstName)
   
   // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-  //console.log(antonietta.multiplyNums(3,4));
+  //console.log(antonietta.multiplyNums(3,4)); ??????
   
   // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
   
