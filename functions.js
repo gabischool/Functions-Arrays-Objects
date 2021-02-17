@@ -8,10 +8,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+// function multiply( a, b){
+//   return a * b;
+// }
 
+// console.log(multiply(3, 5))
 
 /*
 
@@ -25,9 +26,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
-}
+// function Age( human, cat){
+//   return human  * cat;
+// }
+
+// console.log(Age(1, 7))
 
 
 
@@ -47,7 +50,13 @@ console.log("Function was invoked!");
 myFunction();
 ----------------
 
-let anotherFunction = function (param) {
+let myFunction  = () => {console.log("Function was invoked!");}
+
+myFunction();
+
+----------------
+
+let anotherFunction =  (param) =>{
   return param;
 };
 
@@ -55,9 +64,11 @@ anotherFunction("Example");
 
 ---------------
 
-let add = function (param1, param2) {
-  return param1 + param2;
-};
+let add = function (param1, param2)  => param1 + param2;
+
+add(1,2);
+
+let add = function (param1, param2)  => param1 + param2;
 
 add(1,2);
 
@@ -83,9 +94,52 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
-}
+
+// 1 = rock
+// 2= paper
+//3 =sisscer
+
+// let myNum1 = Math.floor((Math.random()* 3 )+ 1);
+// let mychioce = prompt("you a number from 1-3")
+
+
+// function game (person ){
+  
+//   if( myNum1 === person){
+//     document.write("draw");
+//   }
+  
+//   else if( myNum1 === 1 && person == 2){
+//     document.write("person win");
+//   } 
+  
+//   else if( myNum1 === 1 && person == 3){
+//     document.write("computer win");
+//   }
+  
+//   else if( myNum1 === 2 && person == 1){
+//     document.write("computer win");
+//   }
+  
+//   else if( myNum1 === 2 && person == 3){
+//     document.write("person win");
+//   }
+  
+//   else if( myNum1 === 3 && person == 2){
+//     document.write("computer win");
+//   }
+  
+//   else if( myNum1 === 3 && person == 1){
+//     document.write("person win");
+//   }
+  
+  
+// };
+
+// document.write(myNum1)
+// game (mychioce);
+
+// ends here
 
 
 
