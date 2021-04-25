@@ -8,9 +8,13 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(/*add your code here*/)
     /*add your code here*/
-  }
+    function multiply(a,b) {
+     return a * b
+    }
+    console.log(multiply(2,4))
+    
 
 
 /*
@@ -30,6 +34,10 @@ function catYears(/*add your code here*/){
 }
 
 
+function catYears(){
+  console.log("3 Years")
+  }
+  console.log(catYears())
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: Convert to Arrow Function  🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -46,7 +54,9 @@ console.log("Function was invoked!");
 
 myFunction();
 ----------------
-
+*/
+function myfunction() =>
+/*
 let anotherFunction = function (param) {
   return param;
 };
@@ -54,7 +64,11 @@ let anotherFunction = function (param) {
 anotherFunction("Example");
 
 ---------------
+*/
+let anotherfunction = function (param) => param
+console.log(function(param))
 
+/*
 let add = function (param1, param2) {
   return param1 + param2;
 };
@@ -62,7 +76,8 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
-
+let add = function (param1, param2) => param1 + param2
+console.log(add(1,2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
