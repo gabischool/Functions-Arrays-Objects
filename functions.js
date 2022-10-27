@@ -8,9 +8,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(num1,num2){
     /*add your code here*/
+    return num1*num2
   }
+  console.log(multiply(7,4))
 
 
 /*
@@ -25,10 +27,13 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
+function catYears(age=7/*add your code here*/){
     /*add your code here*/
+    const sanad=prompt("enter your age")
+    const result=age*sanad
+    return result
 }
-
+console.log("the age is",catYears())
 
 
 
@@ -44,8 +49,10 @@ function myFunction() {
 console.log("Function was invoked!");
 };
 
+
 myFunction();
 ----------------
+
 
 let anotherFunction = function (param) {
   return param;
@@ -62,6 +69,15 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
+let add =(num1,num2) =>{
+  return num1+num2
+
+
+}
+console.log(add(5,9))
+
+
+
 
 
 
