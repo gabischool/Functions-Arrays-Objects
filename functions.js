@@ -112,6 +112,10 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(start){
+   for(int i=99;i < start ; i--){
+      let countdown=start-1;
+   }
+   Console.log(annoyingSong(10))
+   
   }
