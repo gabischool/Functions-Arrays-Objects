@@ -8,9 +8,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply( a,b){
+  return a/b;
   }
+  console.log(multiply(10,2));
 
 
 /*
@@ -25,9 +26,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+function catYears(human ,age ){
+  age=human *7;
+  return age;
 }
+console.log(catYears(10,2));
 
 
 
@@ -37,31 +40,30 @@ function catYears(/*add your code here*/){
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 
-/*
 
-------------
-function myFunction() {
+
+//------------
+ myFunction= () => {
 console.log("Function was invoked!");
 };
-
 myFunction();
-----------------
+//----------------
 
-let anotherFunction = function (param) {
+let anotherFunction =  (param)=> {
   return param;
 };
 
 anotherFunction("Example");
 
----------------
+//---------------
 
-let add = function (param1, param2) {
+let add =  (param1, param2)=> {
   return param1 + param2;
 };
 
 add(1,2);
 
-*/
+
 
 
 
@@ -84,6 +86,16 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
+  if(user!=computer){
+    return "you lose";
+  }
+  else if(computer1!=user){
+    return "you win";
+  }
+  else{
+    return "its a tie";
+  }
+  console.log(game(2,1))
     /*add your code here*/
 }
 
