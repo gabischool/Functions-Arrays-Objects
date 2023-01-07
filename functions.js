@@ -8,11 +8,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b;
   }
-
-
+console.log(multiply(5,2))
 /*
 
 
@@ -25,9 +24,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+function catYears(age){
+    catAge = 7
+    return catAge * age
 }
+console.log(catYears(4))
 
 
 
@@ -62,8 +63,14 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
+const myFunction = () => { console.log("Function was invoked!"); }
+myFunction();
 
+let anotherFunction =  (param) =>{ return param; }
+console.log(anotherFunction("Example"))
 
+let add = (param1, param2) => { return param1 + param2; };
+console.log(add(1,2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -81,11 +88,29 @@ Use the game function below to do the following:
   RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
+
+  // human wins - getResult('Rock', 'Scissors') 👉 1
+// human loses - getResult('Scissors', 'Rock') 👉 -1
+// human draws - getResult('Rock', 'Rock') 👉 0
+
+const rpsChoice = ['Rock', 'Paper', 'Scissors']
+  const randomChoice = Math.floor(Math.random() * rpsChoice.length)
 */
 
+
+const computerChoice = ['Rock', 'Paper', 'Scissors']
+const randomChoice = Math.floor(Math.random() * computerChoice.length)
+//console.log(computerChoice[randomChoice])
 function game(user, computer){
-    /*add your code here*/
+  user = randomChoice
+  let choices = {'userChoice': user, 'computerChoice': computer}
+  console.log(choices)
+  console.log({randomChoice:randomChoice})
+  console.log({user:user})
+  if(user == 'Rock' && computer == 'Scissors')
+      return "you win!"
 }
+console.log(game('Rock',computerChoice))
 
 
 
