@@ -88,29 +88,33 @@ Use the game function below to do the following:
   RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
-
-  // human wins - getResult('Rock', 'Scissors') 👉 1
-// human loses - getResult('Scissors', 'Rock') 👉 -1
-// human draws - getResult('Rock', 'Rock') 👉 0
-
-const rpsChoice = ['Rock', 'Paper', 'Scissors']
-  const randomChoice = Math.floor(Math.random() * rpsChoice.length)
+  
 */
 
 
 const computerChoice = ['Rock', 'Paper', 'Scissors']
-const randomChoice = Math.floor(Math.random() * computerChoice.length)
-//console.log(computerChoice[randomChoice])
+
 function game(user, computer){
-  user = randomChoice
-  let choices = {'userChoice': user, 'computerChoice': computer}
+  computer = Math.floor(Math.random() * computerChoice.length)
+  const choices = {'userChoice': user, 'computerChoice': computerChoice[computer]}
   console.log(choices)
-  console.log({randomChoice:randomChoice})
-  console.log({user:user})
-  if(user == 'Rock' && computer == 'Scissors')
-      return "you win!"
+  if(user ===  computerChoice[computer])
+    return "it's a tie"
+  else if(user === 'Rock' && computerChoice[computer] === 'Scissors')
+    return "you win!"
+  else if(user === 'Scissors' && computerChoice[computer] === 'Paper')
+    return 'you win!'
+  else if(user === 'Paper' && computerChoice[computer] === 'Rock')
+    return 'you win!'
+  else
+    return "you lose!"
 }
-console.log(game('Rock',computerChoice))
+
+const user = prompt('Enter your choice:')
+if(user === null || user === '')
+  console.log('Sorry try again with correct input...' )
+else
+  console.log(game(user, computerChoice))
 
 
 
@@ -125,6 +129,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(num){
+  while(num >= 1){
+    console.log(`${num} bottless of soda on the wall, ${num} bottles of soda, take one down pass it around ${num-1} bottles of soda on the wall`)
+    num--
   }
+        
+  }
+
+  annoyingSong(99)
