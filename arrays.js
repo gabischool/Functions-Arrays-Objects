@@ -118,4 +118,4 @@ let inventory = [
     if(make.car_make == 'BMW' || make.car_make == 'Audi')
       BMWAndAudi.push(make.car_make)
   
-  console.log(BMWAndAudi);
+  console.log(JSON.stringify(BMWAndAudi));
