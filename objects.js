@@ -62,15 +62,15 @@ const example = {
   const parent = {
     name: 'Susan',
     age: 70,
-    speak: () => {return this.name},
+    speak(){return this.name},
     child: {
       name: 'George',
       age: 50,
-      speak: () => {return this.name},
+      speak(){return this.name},
       grandchild: {
         name: 'sam',
         age: 30,
-        speak: () => {return this.name}
+        speak(){return this.name},
       }
     }
   }
@@ -80,12 +80,15 @@ const example = {
   // Log the child's age
   console.log(parent.child.age)
   // Log the name and age of the grandchild
-  // for(const prop in parent.child.grandchild)
-  //   if(prop != prop.length -1)
-  //     console.log(parent.child.grandchild[prop])
-
+  
+  const keys = Object.keys(parent.child.grandchild)
+  for (var i = 0; i < keys.length - 1; i++) {
+   console.log(keys[i],':', parent.child.grandchild[keys[i]])
+  }
+  
   // Have the parent speak
   console.log(parent.speak())
   // Have the child speak
-  
+  console.log(parent.child.speak())
   // Have the grandchild speak
+  console.log(parent.child.grandchild.speak())
